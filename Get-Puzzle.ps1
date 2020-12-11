@@ -1,4 +1,4 @@
-﻿$day = 9
+﻿$day = 4
 
 
 $AoCCookies = Import-PowerShellDataFile 'C:\users\flgod\OneDrive - DFDS\PoSH\GIT\adventcookie.psd1'
@@ -15,12 +15,6 @@ $AoCCookies.Keys | ForEach-Object {
 
 
 New-Item -ItemType Directory -Name "day$day" -force
-
-
-$downloadToPath = ".\day$day\puzzle.html"
-$remoteFileLocation = "https://adventofcode.com/2020/day/$day"
-Invoke-WebRequest $remoteFileLocation -WebSession $session -OutFile $downloadToPath
-
 
 $downloadToPath = ".\day$day\input.txt"
 $remoteFileLocation = "https://adventofcode.com/2020/day/$day/input"
