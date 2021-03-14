@@ -1,4 +1,4 @@
-﻿$day = 4
+﻿$day = 12
 
 
 $AoCCookies = Import-PowerShellDataFile 'C:\users\flgod\OneDrive - DFDS\PoSH\GIT\adventcookie.psd1'
